@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#260d18">
+  <meta name="description" content="A little anniversary surprise for My Dear Shreeshu.">
+  <title>Our Little World ♥</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main>
+    <section id="lock-screen" class="screen lock-screen" aria-labelledby="lock-title">
+      <div class="lock-content">
+        <p class="eyebrow">A LITTLE SURPRISE, JUST FOR YOU</p>
+        <div class="envelope-wrap" aria-hidden="true">
+          <div class="envelope">
+            <div class="envelope-flap"></div>
+            <div class="letter-peek"><span>for my favourite person</span><b>♥</b></div>
+            <div class="wax-seal">♥</div>
+          </div>
+        </div>
+        <p class="script-line">To my favourite person</p>
+        <h1 id="lock-title">Our Little World</h1>
+        <p class="intro">A little letter for <strong>My Dear Shreeshu</strong></p>
+        <p class="lock-hint">Enter the secret code to open your surprise</p>
+        <form id="passcode-form" class="passcode-form">
+          <label class="sr-only" for="passcode">Six-digit passcode</label>
+          <input id="passcode" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="••••••" autocomplete="off" aria-describedby="passcode-error" required>
+          <button class="primary-button" type="submit">Open your letter <span>♥</span></button>
+          <p id="passcode-error" class="error-message" role="status" aria-live="polite"></p>
+        </form>
+        <p class="tiny-note">made with love, just for you</p>
+      </div>
+    </section>
+
+    <section id="love-site" class="hidden">
+      <header class="site-header">
+        <a href="#top" class="brand">Our Little World <span>♥</span></a>
+        <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false"><span class="music-icon">♫</span><span id="music-label">Play our song</span></button>
+      </header>
+
+      <section id="top" class="hero section-pad">
+        <p class="eyebrow">OUR LITTLE UNIVERSE</p>
+        <h2>Every little thing<br><em>led me to you.</em></h2>
+        <p class="hero-copy">Two years of us, a thousand little memories, and so much more still to come.</p>
+        <div class="scroll-cue"><span></span> OUR MEMORIES</div>
+      </section>
+
+      <section class="memories section-pad">
+        <div class="section-heading">
+          <p class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</p>
+          <h2>Our memory <em>reel</em></h2>
+          <p>Every frame holds a little piece of us.</p>
+        </div>
+        <div class="film-frame">
+          <div class="film-holes film-holes-top" aria-hidden="true"></div>
+          <div id="slides" class="slides" aria-live="polite">
+            <article class="slide active">
+              <div class="photo-placeholder"><div class="placeholder-icon">♡</div><p>Your favourite memory goes here</p><small>Replace this with your photo</small></div>
+            </article>
+            <article class="slide">
+              <div class="photo-placeholder placeholder-two"><div class="placeholder-icon">✦</div><p>A moment only we understand</p><small>Replace this with your photo</small></div>
+            </article>
+            <article class="slide">
+              <div class="photo-placeholder placeholder-three"><div class="placeholder-icon">∞</div><p>One of our many firsts</p><small>Replace this with your photo</small></div>
+            </article>
+          </div>
+          <div class="film-holes film-holes-bottom" aria-hidden="true"></div>
+        </div>
+        <div class="slide-controls">
+          <button id="prev-slide" class="round-button" type="button" aria-label="Previous photo">←</button>
+          <div id="slide-dots" class="slide-dots" aria-label="Choose photo"></div>
+          <span id="slide-count" class="slide-count">01 / 03</span>
+          <button id="next-slide" class="round-button" type="button" aria-label="Next photo">→</button>
+        </div>
+        <p class="upload-note"><span>✦</span> Photo placeholders are ready. Add your pictures to the <code>assets</code> folder and follow the README instructions.</p>
+      </section>
+
+      <section class="letter-section section-pad">
+        <div class="letter-card">
+          <div class="letter-topline"><span>FROM MY HEART</span><span>♥</span></div>
+          <p class="script-line">My Dear Shreeshu,</p>
+          <h2>A little letter <em>for you</em></h2>
+          <div id="message-content" class="message-content"></div>
+          <div class="signature">
+            <span class="script-line">Forever your person,</span>
+            <strong>Tanish <span>♥</span></strong>
+          </div>
+          <div class="letter-decoration" aria-hidden="true">✧ &nbsp; ♥ &nbsp; ✧</div>
+        </div>
+      </section>
+
+      <section class="ending section-pad">
+        <div class="ending-heart" aria-hidden="true">♥</div>
+        <p class="eyebrow">AND THIS IS ONLY THE BEGINNING</p>
+        <h2>To us, and to<br><em>everything still to come.</em></h2>
+        <p class="ending-line">I choose you, in every little world we make.</p>
+        <div class="forever">FOREVER & ALWAYS <span>♥</span></div>
+      </section>
+      <footer>made with love by Tanish · for Shreeshu <span>♥</span></footer>
+    </section>
+  </main>
+
+  <audio id="our-song" preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
